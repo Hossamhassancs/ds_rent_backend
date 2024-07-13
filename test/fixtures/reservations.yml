@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer_name: MyString
+  email: MyString
+  phone: MyString
+  pickup_location: MyString
+  dropoff_location: MyString
+  trip_type: MyString
+  pickup_time: 2024-06-20 06:48:43
+  dropoff_time: 2024-06-20 06:48:43
+  car: one
+
+two:
+  customer_name: MyString
+  email: MyString
+  phone: MyString
+  pickup_location: MyString
+  dropoff_location: MyString
+  trip_type: MyString
+  pickup_time: 2024-06-20 06:48:43
+  dropoff_time: 2024-06-20 06:48:43
+  car: two

@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_en: MyString
+  name_ar: MyString
+  seats_num: 1
+  make_year: 1
+  engine_size: 1.5
+  transmission_ar: MyString
+  transmission_en: MyString
+  cylinders: 1
+  fuel_type_en: MyString
+  fuel_type_ar: MyString
+  doors: 1
+  colors: MyString
+  car_type: MyString
+
+two:
+  name_en: MyString
+  name_ar: MyString
+  seats_num: 1
+  make_year: 1
+  engine_size: 1.5
+  transmission_ar: MyString
+  transmission_en: MyString
+  cylinders: 1
+  fuel_type_en: MyString
+  fuel_type_ar: MyString
+  doors: 1
+  colors: MyString
+  car_type: MyString
