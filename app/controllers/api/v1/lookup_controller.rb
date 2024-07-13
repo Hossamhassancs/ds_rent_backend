@@ -26,6 +26,11 @@ module Api
           car_seats = Car.distinct.pluck(:seats_num)
           render json: car_seats
         end
+
+        def trip_type
+          trip_types = ['Pickup Airport', 'Dropoff Airport', 'Rent per Days', 'Rent per Hours']
+          render json: trip_types
+        end
       end
     end
   end

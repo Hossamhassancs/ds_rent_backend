@@ -17,11 +17,17 @@ module Api
             render json: { errors: reservation.errors.full_messages }, status: :unprocessable_entity
           end
         end
-  
+
         private
-  
+
         def reservation_params
-          params.require(:reservation).permit(:customer_name, :email, :phone, :time, :car_id)
+          params.require(:reservation).permit(:customer_name, :email, :phone, :time, :car_id,
+            :pickup_location_address,
+            :pickup_location_latitude,
+            :pickup_location_longitude,
+            :pickup_location_city,
+            :pickup_location_country,
+            :duration_in_hours)
         end
       end
     end
