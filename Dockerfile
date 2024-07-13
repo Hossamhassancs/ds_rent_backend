@@ -20,7 +20,7 @@ COPY . /app/
 RUN bundle exec rake assets:precompile
 
 # Expose the port that Puma will run on
-EXPOSE 3000
+EXPOSE 3001
 
 # Start the main process
 CMD ["rails", "server", "-b

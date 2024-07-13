@@ -7,12 +7,69 @@
 // For example, to change the sidebar width:
 // $sidebar-width: 242px;
 
+// Custom colors extracted from the image
+$color-dark-blue: #24314B;
+$color-gold-bronze: #B2834B;
+$color-white-background: #F8F8F8;
+
+// Blaze colors
+$color-brand: $color-dark-blue;
+$color-info: #4dabf5;
+$color-warning: #ff9800;
+$color-success: #4caf50;
+$color-error: #f44336;
+
+// Main variables
+$bg-footer: #dfdfdf;               // bg footer bar
+$bg-form1: $color-white-background;                // bg 1st level forms
+$bg-form2: darken($bg-form1, 3%);  // bg 2nd level forms (nested)
+$bg-form3: darken($bg-form1, 6%);  // bg 3rd level forms (nested)
+$bg-form4: darken($bg-form1, 9%);  // bg 4th level forms (nested)
+$bg-form-sub-headings: lighten($color-brand, 64%);  // bg nested forms title
+$bg-header: $color-brand;          // bg header bar
+$bg-inputs: #fff;                  // bg forms inputs
+$bg-menu-active: $color-gold-bronze;          // bg menu item current / hover
+$bg-sidebar: #efefef;              // bg sidebar
+$fg-box-title: #fff;
+$fg-button-link: #fff;
+$fg-menu-items: #f8f8f8;
+$fg-table-borders: #e4e4e4;
+$fg-table-link: #eee;
+
+// Button colors
+$btn-primary-bg: $color-dark-blue;
+$btn-primary-color: $color-white-background;
+$btn-secondary-bg: $color-gold-bronze;
+$btn-secondary-color: $color-white-background;
+
+// Other variables
+$form-padding: 10px;
+$inputs-spacing: 10px;
+$height-inputs: 26px;
+$height-topbar: 40px;
+$height-titlebar: 38px;
+$text-shadow: #000;
+
+// Custom button styles
+a.button, .btn {
+  background-color: $btn-primary-bg;
+  color: $btn-primary-color;
+  border: none;
+  &:hover {
+    background-color: lighten($btn-primary-bg, 10%);
+  }
+}
+
+a.button.secondary, .btn-secondary {
+  background-color: $btn-secondary-bg;
+  color: $btn-secondary-color;
+  border: none;
+  &:hover {
+    background-color: lighten($btn-secondary-bg, 10%);
+  }
+}
+
 // Active Admin's got SASS!
 @import "active_admin/mixins";
 @import "active_admin/base";
-@import "activeadmin_blaze_theme/theme"
-
-// Overriding any non-variable Sass must be done after the fact.
-// For example, to change the default status-tag color:
-//
-//   .status_tag { background: #6090DB; }
+@import "activeadmin_blaze_theme/theme";
