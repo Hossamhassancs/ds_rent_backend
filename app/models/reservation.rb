@@ -11,7 +11,7 @@ class Reservation < ApplicationRecord
 
 
   def self.ransackable_attributes(auth_object = nil)
-    %w[customer_name email phone time created_at updated_at car_id status pickup_location dropoff_location trip_type]
+    %w[customer_name email phone time created_at updated_at car_id status pickup_location dropoff_location trip_type pickup_location_address pickup_location_city pickup_location_country dropoff_location_address dropoff_location_city dropoff_location_country duration_in_hours]
   end
 
   def self.ransackable_associations(auth_object = nil)

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_07_13_051804) do
+ActiveRecord::Schema[7.1].define(version: 2024_07_13_065730) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -99,6 +99,11 @@ ActiveRecord::Schema[7.1].define(version: 2024_07_13_051804) do
     t.string "pickup_location_city"
     t.string "pickup_location_country"
     t.float "duration_in_hours"
+    t.string "dropoff_location_address"
+    t.float "dropoff_location_latitude"
+    t.float "dropoff_location_longitude"
+    t.string "dropoff_location_city"
+    t.string "dropoff_location_country"
     t.index ["car_id"], name: "index_reservations_on_car_id"
   end
 
